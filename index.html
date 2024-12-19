@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata about the page -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My HTML Page</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <section class="vh-100 gradient-custom">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card bg-dark text-white" style="border-radius: 1rem">
+              <div class="card-body p-5 text-center">
+                <div class="mb-md-5 mt-md-4 pb-5">
+                  <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                  <p class="text-white-50 mb-5">
+                    Please enter your login and password!
+                  </p>
+                  <form id="loginForm">
+                    <div
+                      data-mdb-input-init
+                      class="form-outline form-white mb-4"
+                    >
+                      <label class="form-label" for="typeEmailX">Email</label>
+                      <input
+                        type="email"
+                        id="typeEmailX"
+                        class="form-control form-control-lg"
+                      />
+                    </div>
+
+                    <div
+                      data-mdb-input-init
+                      class="form-outline form-white mb-4"
+                    >
+                      <label class="form-label" for="typePasswordX"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        id="typePasswordX"
+                        class="form-control form-control-lg"
+                      />
+                    </div>
+
+                    <button
+                      class="btn btn-outline-light btn-lg px-5"
+                      type="submit"
+                    >
+                      Login
+                    </button>
+                  </form>
+                </div>
+
+                <div>
+                  <p class="mb-0">
+                    Don't have an account?
+                    <a href="#register-form" class="text-white-50 fw-bold"
+                      >Sign Up</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="register-form"
+      class="vh-100"
+      style="background-color: #2779e2"
+    >
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-xl-9">
+            <form id="signForm">
+              <h1 class="text-white mb-4">Register as a new user</h1>
+
+              <div class="card" style="border-radius: 15px">
+                <div class="card-body">
+                  <div class="row align-items-center pt-4 pb-3">
+                    <div class="col-md-3 ps-5">
+                      <h6 class="mb-0">Full name</h6>
+                    </div>
+                    <div class="col-md-9 pe-5">
+                      <input
+                        id="full-name"
+                        type="text"
+                        class="form-control form-control-lg"
+                        placeholder="ex:Mariam Elashkar"
+                      />
+                    </div>
+                  </div>
+
+                  <hr class="mx-n3" />
+
+                  <div class="row align-items-center py-3">
+                    <div class="col-md-3 ps-5">
+                      <h6 class="mb-0">Email address</h6>
+                    </div>
+                    <div class="col-md-9 pe-5">
+                      <input
+                        id="email"
+                        type="email"
+                        class="form-control form-control-lg"
+                        placeholder="example@example.com"
+                      />
+                    </div>
+                  </div>
+
+                  <hr class="mx-n3" />
+                  <div class="row align-items-center py-3">
+                    <div class="col-md-3 ps-5">
+                      <h6 class="mb-0">password</h6>
+                    </div>
+                    <div class="col-md-9 pe-5">
+                      <input
+                        id="password"
+                        type="password"
+                        class="form-control form-control-lg"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="px-5 py-4">
+                    <button
+                      type="submit"
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-primary btn-lg"
+                    >
+                      Sign Up
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
